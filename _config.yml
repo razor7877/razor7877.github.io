@@ -1,18 +1,15 @@
-title: Abhishek Nagekar
-description: Web & Security Engineer
-site_title: '@abhn - Abhishek Nagekar'
+title: Kylian Eury
+description: Développement web et logiciel
+site_title: 'Kylian Eury - Portfolio'
 
 # Build settings
 markdown: kramdown
 exclude: [vendor/ruby]
 
 # Personalization
-github_username: abhn
-blog_url: https://www.nagekar.com
-email: abhishek@nagekar.com
-keybase_username: abhn
-twitter_username: abhn_
-reddit_username: abhn
+github_username: razor7877
+blog_url: https://razor7877.github.io
+email: kylian.eury@gmail.com
 
 # absolute or relative
 profile_picture: assets/images/pp.jpg
