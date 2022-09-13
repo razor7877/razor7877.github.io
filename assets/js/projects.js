@@ -11,6 +11,15 @@ let render_projects = (slug) => {
 
     let projects_obj = [
 		{
+            image: 'assets/images/3dengine.png',
+            link: 'https://github.com/razor7877/3D-OpenGL-Engine',
+            title: 'Moteur de rendu 3D',
+            demo: false,
+            technologies: ['C++', 'OpenGL'],
+            description: "Un moteur de rendu 3D basique que je développe actuellement en C++/OpenGL. Shaders en GLSL.",
+            categories: ['cpp', 'personal']
+        },
+        {
             image: 'assets/images/pythonwebcrawler.png',
             link: 'https://github.com/razor7877/PythonWebCrawler',
             title: 'Web Crawler',
@@ -29,15 +38,6 @@ let render_projects = (slug) => {
             categories: ['csharp', 'personal']
         },
 		{
-            image: 'assets/images/bitmaplibrary.png',
-            link: 'https://github.com/razor7877/BitmapLibrary',
-            title: 'Bitmap reader-writer',
-            demo: false,
-            technologies: ['C++', '.bmp'],
-            description: "Une librairie basique qui permet de lire le contenu de fichiers images bitmap pour le manipuler ainsi que de créer ses propres fichiers",
-            categories: ['cpp', 'personal']
-        },
-		{
             image: 'assets/images/photoedit.jpg',
             link: 'https://drive.google.com/file/d/1-_hfWwSCamc9wDXe88_xtfdxJbCOLl3s/view?usp=sharing',
             title: 'Photo Edit',
@@ -49,11 +49,20 @@ let render_projects = (slug) => {
 		{
             image: 'assets/images/phpsymfony.png',
             link: '',
-            title: 'Développement d\'une interface web',
+            title: 'Développement sur une interface web',
             demo: false,
             technologies: ['PHP', 'Symfony'],
             description: "Extension de l'interface web d'une entreprise de maintenance des réseaux électriques: gestion utilisateur et matériel. Développé dans le cadre du stage de 1ère année",
             categories: ['php', 'bts']
+        },
+        {
+            image: 'assets/images/bitmaplibrary.png',
+            link: 'https://github.com/razor7877/BitmapLibrary',
+            title: 'Bitmap reader-writer',
+            demo: false,
+            technologies: ['C++', '.bmp'],
+            description: "Une librairie basique qui permet de lire le contenu de fichiers images bitmap pour le manipuler ainsi que de créer ses propres fichiers",
+            categories: ['cpp', 'personal']
         },
 		{
             image: 'assets/images/pythongame.png',
@@ -94,19 +103,18 @@ let project_mapper = project => {
                 <div class="card__content card__padding">
         
                     <article class="card__article">
-                        <h2><a href="${project.link}">${project.title}</a></h2>
+                        <h2 onclick="showDialog('${project.title}')"><a href="javascript:void(0);">${project.title}</a></h2>
         
                         <p class="paragraph-text-normal">${project.description} ${project.demo ? `<a href="${project.demo}">Demo</a>` : ''}</p>
                     </article>
-
                                 
                     <div class="card__meta">
                         ${project.technologies.map(tech =>
                             `<span class="project-technology paragraph-text-normal">${tech}</span>`
                         ).join('')}
                     </div>
-
                 </div>
+                
             </div>
         </div>
     `
@@ -114,4 +122,15 @@ let project_mapper = project => {
 
 let selected = (slug) => {
     render_projects(slug);
+}
+
+
+function showDialog(projectName)
+{
+    selector = "#" + projectName.split(' ').join('_');
+    $( selector ).dialog({
+        title: projectName,
+        width: 900,
+        height: 900
+    });
 }

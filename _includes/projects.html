@@ -2,7 +2,8 @@
     <section class="section projects" id="projects">
         <div class="full-width">
             <div class="section-heading" id="featured-projects-text">Projets</div>
-            
+                <p class="paragraph-text center-align">Une liste non exhaustive de projets que j'ai pu réaliser</p>
+                <p class="paragraph-text center-align">Cliquer sur un projet ouvrira une fenêtre avec les détails de celui-ci</p>
                 <div class="project-technologies">
 					
 					<a id="all" class="semi-transparent-button with-border white-button" onclick="selected('all')">Tout</a>
@@ -19,6 +20,56 @@
 
             <div class="projects-wrapper">
             <!-- filled in by js -->
+            </div>
+            
+            <div style="display:none" id="Moteur_de_rendu_3D">
+                <a href="assets/images/3dengine.png"><img src="assets/images/3dengine.png" class="popupImage"></a>
+                <p class="paragraph-text center-align">Un moteur de rendu 3D que j'ai commencé à développer récemment pour améliorer mes connaissances en C++ et en programmation graphique.</p>
+                <p class="paragraph-text center-align">Mon travail est d'abstraire l'instanciation, le chargement, et l'utilisation de modèles, textures, shaders etc. pour ne pas avoir à manipuler constamment les concepts de bas niveau.</p>
+                <p class="paragraph-text center-align">Gestion des matrices MVP, des différents modèles, des textures. Interface graphique avec ImGui pour faciliter l'interaction. Gestion de shaders basiques (ombrage de Phong). Caméra avec déplacement et vue avec la souris. Gestion plein écran, cubemaps/skybox et plus ...</p>
+                <a href="https://github.com/razor7877/3D-OpenGL-Engine"><button class="semi-transparent-button with-border white-button"> Accéder au projet (Github) </button></a>
+            </div>
+            
+            <div style="display:none" id="Web_Crawler">
+                <a href="assets/images/pythonwebcrawler.png"><img src="assets/images/pythonwebcrawler.png" class="popupImage"></a>
+                <p class="paragraph-text center-align">Un web crawler en Python créé en quelques jours. Explore récursivement des pages web et enregistre les liens entre celles-ci. Il est possible d'exporter une liste des URLs trouvées, de générer des graphes avec différentes options pour visualiser les relations entre les sites.</p>
+                <p class="paragraph-text center-align">Avec l'aide de la librairie de sérialisation Pickle, possibilité d'enregistrer les données dans un format réutilisable par le programme par la suite. Possibilité de continuer le crawling plus tard.</p>
+                <p class="paragraph-text center-align">Selenium associé avec chrome driver permet l'exploration des pages Web. Des scripts permettent de facilement paramétrer les chemins d'accès</p>
+                <a href="https://github.com/razor7877/PythonWebCrawler"><button class="semi-transparent-button with-border white-button"> Accéder au projet (Github) </button></a>
+            </div>
+            
+            <div style="display:none" id="Mod_theForest">
+                <a href="assets/images/theforest.png"><img src="assets/images/theforest.png" class="popupImage"></a>
+                <p class="paragraph-text center-align">Je me suis intéressé à la modification du code source de jeux Unity. J'ai décidé d'essayer de mettre en place diverses modifications. Pour faciliter ce travail, j'ai développé un mod qui étend les capacités de la console de débogage existante en jeu.</p>
+                <p class="paragraph-text center-align">Ajout du paramétrage de la taille des messages de log, de leurs couleurs, du nombre à afficher. Possibilité de remonter les anciens messages, activation automatique au démarrage de celle-ci etc.</p>
+                <p class="paragraph-text center-align">Pour accéder aux binaries du jeu, dnSpy a été utilisé, avec un logiciel nommé ModAPI qui permet de facilement injecter les DLL du jeu.</p>
+                <a href="https://github.com/razor7877/ImprovedDebugConsole"><button class="semi-transparent-button with-border white-button"> Accéder au projet (Github) </button></a>
+            </div>
+            
+            <div style="display:none" id="Photo_Edit">
+                <a href="assets/images/photoedit.jpg"><img src="assets/images/photoedit.jpg" class="popupImage"></a>
+                <p class="paragraph-text center-align">Une application Android basique qui a ensuite été intégrée dans une application existante d'une entreprise cliente. Un concept globalement assez simple, interaction avec l'appareil pour utiliser l'appareil photo.</p>
+                <p class="paragraph-text center-align">Création de classes personnalisées pour implémenter des pinceaux, couleurs, du texte etc. Utilisation entre autre de la classe Canvas de Android pour permettre de dessiner sur l'image.</p>
+                <a href="https://drive.google.com/file/d/1-_hfWwSCamc9wDXe88_xtfdxJbCOLl3s/view?usp=sharing"><button class="semi-transparent-button with-border white-button"> Accéder au projet (Archive .zip) </button></a>
+            </div>
+            
+            <div style="display:none" id="Développement_sur_une_interface_web">
+                <a href="assets/images/phpsymfony.png"><img src="assets/images/phpsymfony.png"></a>
+                <p class="paragraph-text center-align">Extension d'une interface Web existante dans le cadre d'un stage. Site fonctionnant avec PHP/Symfony, interaction avec une base de donnée MySQL.</p>
+                <p class="paragraph-text center-align">J'ai rajouté de nombreuses fonctions, pour permettre à l'entreprise cliente de gérer les utilisateurs d'une application Android (des techniciens en déplacement), des utilisateurs de l'interface Web en elle-même, et des tablettes utilisées par les techniciens.</p>
+                <p class="paragraph-text center-align">Gestion des ajouts, modifications, suppressions, redirections automatiques et plus ...</p>
+            </div>
+            
+            <div style="display:none" id="Bitmap_reader-writer">
+                <a href="assets/images/bitmaplibrary.png"><img src="assets/images/bitmaplibrary.png" class="popupImage"></a>
+                <p class="paragraph-text center-align">Une librairie simple et imparfaite développée dans le but d'améliorer mes connaissances en C++. Lecture de fichiers Bitmap en parsant le header des fichiers pour récupérer les infos sur la taille, les couleurs etc.</p>
+                <p class="paragraph-text center-align">Ecriture de fichiers Bitmap en passant le pointeur d'un tableau de caractères contenant les données de l'image en format RGB.</p>
+                <a href="https://github.com/razor7877/BitmapLibrary"><button class="semi-transparent-button with-border white-button"> Accéder au projet (Github) </button></a>
+            </div>
+            
+            <div style="display:none" id="Prototype_Panda3D">
+                <a href="assets/images/pythongame.png"><img src="assets/images/pythongame.png" class="popupImage"></a>
+                <p class="paragraph-text center-align">Un prototype de jeu avec le moteur Panda3D en Python fait il y a plusieurs années. Gestion de menus, de paramètres, son, musique, chargement de niveaux. Gestion des collisions, mouvement, gravité etc.</p>
             </div>
         </div>
     </section>
