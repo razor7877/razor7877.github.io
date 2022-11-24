@@ -93,7 +93,7 @@ let project_mapper = project => {
 
                 ${project.image ? 
                     `<div class="card__image border-tlr-radius">
-                        <a href="${project.link}">
+                        <a onclick="showDialog('${project.title}')">
                             <img src="${project.image}" alt="image" id="project-image" class="border-tlr-radius">
                         </a>
                     </div>`           
