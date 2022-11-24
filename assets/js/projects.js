@@ -20,7 +20,7 @@ let render_projects = (slug) => {
             categories: ['cpp', 'personal']
         },
         {
-            image: 'assets/images/pythonwebcrawler.png',
+            image: 'assets/images/webcrawler.png',
             link: 'https://github.com/razor7877/PythonWebCrawler',
             title: 'Web Crawler',
             demo: false,
