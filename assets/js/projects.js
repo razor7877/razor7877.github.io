@@ -73,6 +73,33 @@ let render_projects = (slug) => {
             description: "Un prototype de jeu fait avec le moteur Panda3D il y a longtemps. Menus, paramètres, gestion des mouvements et collisions en 3D ...",
             categories: ['python', 'personal']
         },
+        {
+            image: '',
+            link: '',
+            title: 'Site dynamique PHP M2L',
+            demo: false,
+            technologies: ['PHP'],
+            description: "Un site dynamique programmé en PHP pendant ma deuxième année de BTS. Gestion des connexions, rôles et plus...",
+            categories: ['php', 'bts']
+        },
+        {
+            image: '',
+            link: '',
+            title: 'Site statique PHP M2L',
+            demo: false,
+            technologies: ['PHP'],
+            description: "Un site statique programmé en PHP pendant ma deuxième année de BTS.",
+            categories: ['php', 'bts']
+        },
+        {
+            image: '',
+            link: '',
+            title: 'Générateur SQL',
+            demo: false,
+            technologies: ['C#', 'WinForms'],
+            description: "Un petit logiciel programmé en C# pendant ma première année de BTS. Permet de générer des scripts SQL d'ajouts aux bases à partir de données (csv etc.)",
+            categories: ['csharp', 'bts']
+        },
     ]
 
     let projects = [];
